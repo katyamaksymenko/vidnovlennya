@@ -1,7 +1,7 @@
 <template>
   <section class="grid justify-around" >
     <div
-      class="group relative height-[350px] text-[26px] mb-6 z-50"
+      class="group relative height-[350px] text-[24px] mb-6 z-50"
       v-for="item in items"
       :key="item">
 
