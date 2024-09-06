@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'e-Ukraine';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('@/assets/fonts/e-Ukraine/e-ukraine-regular_w.ttf') format('woff2');
+    }
+}
+
 .full-container {
     background-color: #151515;
     color: #FFFFFF;

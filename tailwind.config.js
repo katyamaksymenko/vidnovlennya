@@ -28,14 +28,9 @@ export const theme = {
     }
   },
   fontFamily: {
-    body: [
-      'e-Ukraine',
-
-    ],
     sans: [
       'e-Ukraine',
-      'sans-serif',
-
+      'sans-serif'
     ]
   }
 };
