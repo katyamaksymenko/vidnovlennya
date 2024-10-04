@@ -1,21 +1,21 @@
 <template>
-  <section class="grid justify-around" >
+  <section class="grid justify-between grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-12 2xl:px-0 text-white">
     <div
-      class="group relative height-[350px] text-[24px] mb-6 z-50"
+      class="group relative text-[24px] mb-6 z-50"
       v-for="item in items"
       :key="item">
 
-      <div class="absolute top-1 left-12 ">
+      <div class="absolute top-3 left-12 ">
         {{ item.number }}
       </div>
-      <div class="absolute left-12 bottom-16 text-sm font-light">
+      <div class="absolute left-12 bottom-20 text-sm font-light transition-all duration-300 group-hover:bottom-32">
         {{ item.subName }}
       </div>
-      <div class="absolute bottom-6 w-[70%] left-12 leading-[1.2]">
+      <div class="absolute text-xl xl:text-2xl bottom-10 w-[70%] left-12 leading-[1.2] transition-all duration-300 group-hover:bottom-20">
         {{ item.name }}
       </div>
 
-      <svg class="overflow-visible" viewBox="0 0 422 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="overflow-visible folder" viewBox="0 0 422 328" fill="none" xmlns="http://www.w3.org/2000/svg">
         <!--        flower-->
         <svg  class="hidden group-hover:block" y="-38" x="180" width="102" height="159"   viewBox="0 0 102 159" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M79.1688 157.138C74.9128 166.407 67.3793 129.802 63.6312 108.157C38.7582 117.185 31.6391 99.7781 25.9481 91.576C20.7005 84.0131 9.64023 90.6399 28.9812 80.5272C43.4292 72.9729 56.8141 83.3689 62.7513 90.6897C59.2982 84.2824 61.2478 66.7888 54.775 70.4881C47.6844 74.5406 29.6043 66.0705 14.3971 56.1302C-0.810149 46.1899 -7.90133 50.2421 14.4349 42.6054C36.7711 34.9687 51.7639 57.6805 55.5752 56.7845C59.3865 55.8884 46.4501 35.0785 49.553 31.1692C52.0352 28.0418 57.1426 46.3457 59.386 55.8885C61.2484 46.7053 68.9855 32.6148 74.6531 28.4479C84.9407 20.8844 88.2882 7.75152 87.5039 31.7869C86.8765 51.0152 70.1503 62.8979 61.8657 66.4357C61.2686 74.8444 65.5136 86.5139 67.7108 91.2976C71.8984 68.0522 91.9121 63.0819 101.395 63.5024C100.412 110.641 76.5195 97.972 71.2533 106.365C65.9871 114.759 84.4887 145.552 79.1688 157.138Z" fill="#D3D3D3"/>
@@ -41,8 +41,6 @@
 
       </svg>
 
-
-
     </div>
 
   </section>
@@ -66,10 +64,7 @@ const items = ref( [
 
 <style scoped >
 
-section {
-  grid-template-columns: repeat(3, 421px);
 
-}
 
 
 

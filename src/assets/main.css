@@ -10,18 +10,26 @@
         font-display: swap;
         src: url('@/assets/fonts/e-Ukraine/e-ukraine-regular_w.ttf') format('woff2');
     }
+    @font-face {
+        font-family: 'e-Ukraine Head';
+        src: url('@/assets/fonts/e-UkraineHead/e-UkraineHead-Regular.otf') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
 }
+:root {
+    --bg: #101010;
+    --bg-text: #ffffff;
+    --bg-text-secondary: #D3D3D3;
 
-.full-container {
-    background-color: #151515;
-    color: #FFFFFF;
+}
+body {
+    background-color: var(--bg);
+    color: var(--bg-text) ;
+}
+.goal-subhead {
+    color: var(--bg-text-secondary) ;
 }
 li {
     list-style-type: none;
-}
-.goal-name {
-    font-size: 44px;
-}
-.goal-content p {
-    font-size: 22px;
 }

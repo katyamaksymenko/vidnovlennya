@@ -3,11 +3,17 @@ export const content = ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'];
 export const darkMode = 'class';
 export const theme = {
   extend: {
+    top: {
+      '-10p': '30%',
+    },
     colors: {
       greyText: {
         50: '#D3D3D3'
       },
-      mainBg: '#151515',
+      mainBgBlack: '#101010',
+      textBlack:'#ffffff',
+      mainBgWhite: '#E3EDF6',
+      textWhite: '#101010',
       blueBg: '#2969F6',
       greyBg: '#393939',
       footerText: '#666666',
@@ -31,6 +37,21 @@ export const theme = {
     sans: [
       'e-Ukraine',
       'sans-serif'
+    ],
+    'e-Ukraine Head': [
+      'e-Ukraine Head',
+      'sans-serif'
     ]
-  }
+  },
+  screens: {
+    'lg-custom': '1240px',
+    'xl-custom': '1440px',
+    'xll-custom': '1380px',
+    'sm': '640px',
+    'md': '768px',
+    'lg': '1024px',
+    'xl': '1280px',
+    '2xl': '1536px',
+    'sm-custom': '375px'
+  },
 };
