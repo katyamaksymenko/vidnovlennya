@@ -17,7 +17,7 @@
            class="z-0  absolute top-28 w-[100%] h-[550px] sm:h-[450px] md:h-[450px] 2xl:h-[700px]"
       >
       <img
-        class="absolute left-0 -top-20 sm:left-10 md:left-4 xl:left-8 2xl:left-[5%] h-[550px] sm:h-[450px] md:h-[700px] xl:h-[900px] 2xl:h-[1100px]"
+        class="absolute left-0 -top-20  h-[550px] sm:h-[450px] md:h-[700px] xl:h-[900px] 2xl:h-[1100px]"
         src="@/assets/img/animation.svg" alt=""
       >
     </div>
