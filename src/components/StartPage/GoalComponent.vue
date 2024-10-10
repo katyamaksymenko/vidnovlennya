@@ -4,10 +4,10 @@
     <div class="absolute z-10 backdrop-blur-lg w-full pt-14 pb-8 rounded-bl-[28px] rounded-br-[28px]">
       <div class="2xl:pl-32 xl-custom:pl-24 xl:pl-20 lg:pl-16 md:pl-16 sm:pl-8 sm-custom:pl-4  ">
         <h1 class="sm-custom:text-3xl  sm:text-4xl  md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-[3.55rem] 2xl:leading-[1.1]">
-          Геопортал показників Регіонального розвитку
+          Геопортал розвитку стратегічних напрямків
         </h1>
         <div class="w-2/3 lg:w-1/2 mt-8 px-2 py-1 border-greyText-50 border-l-4 goal-subhead text-[14px] sm:text-[16px]  ">
-          Єдина геоінформаційна система здійснення моніторингу та оцінювання розвитку регіонів і територіальних громад
+          Єдина інформаційна система здійснення моніторингу та оцінювання розвитку стратегічних напрямків
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
            class="z-0  absolute top-28 w-[100%] h-[550px] sm:h-[450px] md:h-[450px] 2xl:h-[700px]"
       >
       <img
-        class="absolute left-0 -top-20 sm:left-10 md:left-4 xl:left-8 2xl:left-[10%] h-[550px] sm:h-[450px] md:h-[700px] xl:h-[900px] 2xl:h-[1100px]"
+        class="absolute left-0 -top-20 sm:left-10 md:left-4 xl:left-8 2xl:left-[5%] h-[550px] sm:h-[450px] md:h-[700px] xl:h-[900px] 2xl:h-[1100px]"
         src="@/assets/img/animation.svg" alt=""
       >
     </div>
@@ -30,7 +30,7 @@
         <p class="text-greyText-50 text-center goal-subhead">
           Забезпечити повний цикл формування, реалізації та моніторингу регіональної політики:
           від рішень на основі даних та стратегічного планування до роботи зі стейкголдерами та
-          моніторингу регіонального розвитку
+          моніторингу стратегічних напрямків
         </p>
       </div>
 
