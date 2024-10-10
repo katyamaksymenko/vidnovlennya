@@ -33,3 +33,7 @@ body {
 li {
     list-style-type: none;
 }
+.filter {
+    -webkit-filter: brightness(0.8) invert(1);
+    filter: brightness(0.8) invert(1);
+}

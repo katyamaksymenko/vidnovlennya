@@ -1,16 +1,16 @@
 <template>
   <div class="map relative z-10 ">
 
-    <div class="flex justify-between px-10 pt-10 font-normal text-lg map-statistics">
-      <div class="flex">
-        <p class="w-11 h-11 bg-startYellow rounded-full"></p>
+    <div class="flex justify-between flex-wrap  px-10 pt-12 font-normal text-lg map-statistics">
+      <div class="flex py-4">
+        <p class="w-[44px] h-[44px] bg-startYellow rounded-full"></p>
         <p class="pt-2 ml-3">більше 70% територіальних громад</p>
       </div>
-      <div class="flex">
+      <div class="flex py-4">
         <p class="w-11 h-11 bg-blueBg rounded-full"></p>
         <p class="pt-2 ml-3">від 40% до 70% територіальних громад</p>
       </div>
-      <div class="flex">
+      <div class="flex py-4">
         <p class="w-11 h-11 bg-greyBg rounded-full"></p>
         <p class="pt-2 ml-3">менше 40% територіальних громад</p>
       </div>

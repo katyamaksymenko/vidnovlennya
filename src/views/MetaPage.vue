@@ -1,18 +1,18 @@
 <template>
   <div
-    class="full-container">
+    class="">
 
-    <div class="page-container w-full ">
+    <div class="page-container  ">
       <header >
         <header-component />
       </header>
       <main>
         <goal-component class="" />
-        <folder-component class="max-w-[1440px] mx-auto"/>
+        <folder-component class="container mx-auto"/>
         <progress-bar class="container mx-auto"/>
-        <map-component class="max-w-[1440px] mx-auto"/>
+        <map-component class="container mx-auto"/>
       </main>
-      <footer-component class="max-w-[1440px] mx-auto"/>
+      <footer-component class=" mx-auto"/>
     </div>
 
   </div>

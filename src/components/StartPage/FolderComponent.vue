@@ -1,7 +1,7 @@
 <template>
-  <section class="grid justify-between grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-12 2xl:px-0 text-white">
-    <div
-      class="group relative text-[24px] mb-6 z-50"
+  <section class="flex flex-wrap justify-center gap-10 text-white pl-14 ">
+   <div
+      class="group relative text-[24px] mb-6 z-50 w-[421px]"
       v-for="item in items"
       :key="item">
 

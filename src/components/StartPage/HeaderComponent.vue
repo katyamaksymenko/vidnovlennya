@@ -2,11 +2,11 @@
   <div class="flex justify-between py-16 px-6 sm:pl-6 md:pl-12 lg:pl-12 xl-custom:px-[5%] 2xl:mx-auto ">
     <div class="flex">
       <img src="/src/assets/img/logo.svg"  alt="logo" class="w-9 h-9">
-      <span class="text-sm pl-4 mr-10">
+      <span class="text-m pl-4 mr-10">
         Міністерство <br> Міністерство
       </span>
     </div>
-    <nav class="flex text-sm px-2 mt-1 ">
+    <nav class="flex text-m px-2 mt-1 ">
       <div v-for="item in navItems" :key="item.id" class="lg-custom:block hidden ">
         <ul>
           <li class="px-4 hover:bg-neutral-700 py-2 rounded-full">
@@ -73,8 +73,7 @@ onMounted(() => {
   root.value = document.documentElement;
 
   const svgElements = document.querySelectorAll('.whiteSvg'); // Select all elements with the class 'whiteSvg'
-
-
+  const goalBg = document.getElementById("filter");
 
   watch(dark, async (newValue) => {
     await nextTick();
@@ -82,25 +81,27 @@ onMounted(() => {
     if (newValue) {
       root.value?.style.setProperty("--bg", "#E3EDF6");
       root.value?.style.setProperty("--bg-text", "#101010");
-      root.value?.style.setProperty("--bg-text-secondary", "#666666");
+      root.value?.style.setProperty("--bg-text-secondary", "#666666 ");
 
+      // Change stroke to black for all SVG elements in dark mode
       svgElements.forEach(svg => {
         svg.querySelectorAll('path, circle, rect').forEach(element => {
           element.setAttribute('stroke', 'black');
-          element.setAttribute('fill', '#FFA800');
         });
       });
+      goalBg.classList.add("filter");
     } else {
       root.value?.style.setProperty("--bg", "#101010");
       root.value?.style.setProperty("--bg-text", "#ffffff");
       root.value?.style.setProperty("--bg-text-secondary", "#D3D3D3");
 
+      // Change stroke to white for all SVG elements in light mode
       svgElements.forEach(svg => {
         svg.querySelectorAll('path, circle, rect').forEach(element => {
           element.setAttribute('stroke', 'white');
-          element.setAttribute('fill', '#E0FC52');
         });
       });
+      goalBg.classList.remove("filter");
     }
   }, { immediate: true });
 });

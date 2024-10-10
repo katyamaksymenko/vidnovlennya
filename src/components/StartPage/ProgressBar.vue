@@ -1,29 +1,31 @@
 <template>
-  <div>
-    <h1 class="text-[44px] w-3/4 py-12 leading-tight">
+  <div class="">
+    <h1 class="text-[44px] w-3/4 pt-20 leading-tight">
       Cтан затвердження статегічних документів у розрізі громад
     </h1>
     <div class="pb-40 flex justify-between flex-wrap">
-      <div class=" w-[20%] h-[208px] text-center rounded-full"
+      <div class="w-[278px] text-center rounded-full mt-12"
            v-for="item in percentageItems"
            :key="item">
-        <svg viewBox="0 0 36 36" class="circular-chart">
-          <path
-            class="circle-bg"
-            d="M18 2.0845
-           a 15.9155 15.9155 0 0 1 0 31.831
-           a 15.9155 15.9155 0 0 1 0 -31.831"
-          />
-          <path
-            class="circle"
-            :stroke-dasharray="getDashArray(item.number)"
-            d="M18 2.0845
-           a 15.9155 15.9155 0 0 1 0 31.831
-           a 15.9155 15.9155 0 0 1 0 -31.831"
-          />
-          <text x="18" y="20.35" class="percentage ">{{ item.number }}%</text>
-        </svg>
-        <p class="text-[18px] pt-2">
+        <div class="w-[178px] h-[208px] ml-[18%]">
+          <svg viewBox="0 0 36 36" class="circular-chart">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+               a 15.9155 15.9155 0 0 1 0 31.831
+               a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              :stroke-dasharray="getDashArray(item.number)"
+              d="M18 2.0845
+               a 15.9155 15.9155 0 0 1 0 31.831
+               a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage ">{{ item.number }}%</text>
+          </svg>
+        </div>
+        <p class="text-[18px] pt-2  ">
           {{ item.text }}
         </p>
       </div>
@@ -53,8 +55,7 @@ const getDashArray = (percentage) => {
 
 
 .circular-chart {
-  width: 100%;
-  height: 100%;
+
 }
 
 .circle-bg {

@@ -13,11 +13,16 @@
     </div>
 
     <div class="relative mt-24">
-      <img src="@/assets/img/animation_bg.png" alt="" class="z-0  absolute top-28 w-[100%] h-[550px] sm:h-[450px] md:h-[450px] 2xl:h-[780px]">
-      <img class="absolute  left-72 h-[550px] sm:h-[450px] md:h-[450px] 2xl:h-[1100px]" src="@/assets/img/animation.svg" alt="">
+      <img src="@/assets/img/animation_bg.png" alt="" id="filter"
+           class="z-0  absolute top-28 w-[100%] h-[550px] sm:h-[450px] md:h-[450px] 2xl:h-[700px]"
+      >
+      <img
+        class="absolute left-0 -top-20 sm:left-10 md:left-4 xl:left-8 2xl:left-[10%] h-[550px] sm:h-[450px] md:h-[700px] xl:h-[900px] 2xl:h-[1100px]"
+        src="@/assets/img/animation.svg" alt=""
+      >
     </div>
 
-    <div class="absolute bottom-0 w-full text-center mx-auto flex justify-center backdrop-blur-lg py-16  rounded-tl-[28px] rounded-tr-[28px]">
+    <div class="absolute bottom-20 w-full text-center mx-auto flex justify-center backdrop-blur-lg py-16  rounded-tl-[28px] rounded-tr-[28px]">
       <div class="w-9/12 ">
         <h2 class="goal-name pb-4 sm-custom:text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl text-4xl">
           Наша мета
